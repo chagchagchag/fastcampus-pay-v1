@@ -4,7 +4,9 @@ plugins {
 	id("io.spring.dependency-management") version "1.1.4"
 }
 
-group = "io.chagchagchag.ddd"
+extra["axonVersion"] = "4.9.2"
+
+group = "io.chagchagchag.ddd.fastcampus_v1.membership"
 version = "0.0.1-SNAPSHOT"
 
 java {
@@ -22,8 +24,11 @@ repositories {
 }
 
 dependencies {
-	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
+//	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
 	implementation("org.springframework.boot:spring-boot-starter-web")
+//	implementation("org.axonframework:axon-configuration:${property("axonVersion")}")
+//	implementation("org.axonframework:axon-spring-boot-starter:${property("axonVersion")}")
+
 	compileOnly("org.projectlombok:lombok")
 	runtimeOnly("com.mysql:mysql-connector-j")
 	annotationProcessor("org.projectlombok:lombok")
