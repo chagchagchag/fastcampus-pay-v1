@@ -24,14 +24,19 @@ repositories {
 }
 
 dependencies {
-//	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
+	implementation(project(":fastcampus-common"))
+	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
 	implementation("org.springframework.boot:spring-boot-starter-web")
+	implementation("org.springframework.boot:spring-boot-starter-validation")
 //	implementation("org.axonframework:axon-configuration:${property("axonVersion")}")
 //	implementation("org.axonframework:axon-spring-boot-starter:${property("axonVersion")}")
+	implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.5.0")
 
 	compileOnly("org.projectlombok:lombok")
+	runtimeOnly("com.h2database:h2")
 	runtimeOnly("com.mysql:mysql-connector-j")
 	annotationProcessor("org.projectlombok:lombok")
+//	testImplementation("org.springdoc:springdoc-openapi-starter-webmvc-api:2.5.0")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
 
