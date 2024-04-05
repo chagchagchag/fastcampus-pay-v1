@@ -10,8 +10,7 @@ Servlet Stack 기반이며, v2 버전에서 webflux 기반으로 전환 예정�
 v1 버전을 빠르게 끝낸 후 v2 버전을 webflux 기반의 프로젝트로 빠르게 시작해볼 예정입니다.<br/>
 
 참고자료는 아래와 같습니다
-- [간편결제 프로젝트로
-  한 번에 끝내는 실전 MSA](https://fastcampus.co.kr/dev_online_projectmsa)
+- [간편결제 프로젝트로 한 번에 끝내는 실전 MSA](https://fastcampus.co.kr/dev_online_projectmsa)
 - [https://github.com/KimByeongKou/fastcampus-pay](https://github.com/KimByeongKou/fastcampus-pay)
 
 <br/>
